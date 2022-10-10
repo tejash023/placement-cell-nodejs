@@ -1,0 +1,19 @@
+{
+  "name": "placement_cell",
+  "version": "1.0.0",
+  "description": "placement cell backend project",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tejashwa Rajvardhan",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "express-ejs-layouts": "^2.5.1",
+    "mongoose": "^6.6.5",
+    "nodemon": "^2.0.20"
+  }
+}
