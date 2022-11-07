@@ -7,6 +7,7 @@ const port = 8080;
 const expressLayouts  = require('express-ejs-layouts');
 const db = require('./config/mongoose');
 const sassMiddleware = require('node-sass-middleware');
+const User = require('./models/user');
 
 //middleware to use assets
 app.use(
