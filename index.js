@@ -3,13 +3,26 @@ const express = require('express');
 const cookieParser = require('cookie-parser');
 const app = express();
 const port = 8080;
-const expressLayouts  = require('express-ejs-layouts');
 
+const expressLayouts  = require('express-ejs-layouts');
+const db = require('./config/mongoose');
+const sassMiddleware = require('node-sass-middleware');
+
+//middleware to use assets
+app.use(
+  sassMiddleware({
+  src: './assets/scss',
+  dest: './assets/css',
+  debug: true,
+  outputStyle: 'extended',
+  prefix:  '/css' ,
+  }
+));
+app.use(express.static('assets'));
 app.use(express.urlencoded());
 app.use(cookieParser());
-app.use(express.static('./assets'));
 app.use(expressLayouts);
-app.use('/uploads', express.static(__dirname + '/uploads'));
+
 
 //extract styles and scripts from layouts
 app.set('layout extractStyles', true);
@@ -18,6 +31,8 @@ app.set('layout extractScripts', true);
 //setting view engines as ejs
 app.set('view engine', 'ejs');
 app.set('views', './views');
+
+
 
 
 

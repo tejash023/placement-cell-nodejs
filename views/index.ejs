@@ -1,14 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <h1>Placement cell
+<link rel="stylesheet" href="/css/user_signin.css">
+
+<div class="user-signin">
+  <h2>Login to access the Placement Cell</h2>
+  <form action="/user/create-session" method="POST" class="signin-form">
     
-  </h1>
-</body>
-</html>
+    <input type="email" name="email" placeholder="Enter email" required>
+    <input type="password" name="password" placeholder="Enter Password" required>
+    
+    <button type="submit">Sign in</button>
+    <a href="/user/signup">Not Registered? <span>Sign up here</span></a>
+    <a id = "social-login" href="/user/auth/google"><i class="fa-brands fa-google"></i>Login with Google</a>
+    <a href="/"><i class="fa-solid fa-house"></i></a>
+
+  </form>
+</div>

@@ -1,0 +1,16 @@
+<link rel="stylesheet" href="/css/user_signup.css">
+<div class="user-signup">
+  
+  <form action="/user/create" method="POST" class="signup-form">
+    <h2>Sign up Form</h2>
+    <input type="text" name="name" placeholder="Enter name" required>
+    <input type="email" name="email" placeholder="Enter email" required>
+    <input type="password" name="password" placeholder="Enter Password" required>
+    <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+    <button type="submit">Sign up</button>
+    <a href="/user/signin">Already Registered? <span>Sign in here</span></a>
+    <a id = "social-login" href="/user/auth/google"><i class="fa-brands fa-google"></i>Singup using Google</a>
+    <a href="/"><i class="fa-solid fa-house"></i></a>
+
+  </form>
+</div>

@@ -1,0 +1,23 @@
+<header>
+  <h2>Placement Cell</h2>
+  <ul>
+    <% if(locals.user) { %>
+      <li> Hi, <%= user.name %> </li>
+      <li>
+        <a href="/user/sign-out">Sign Out</a>
+      </li>
+
+    <%} else { %>
+      <li>
+        <a href="/user/signin">Sign In</a>
+      </li>
+
+      <li>
+        <a href="/user/signup">Sign Up</a>
+      </li>
+    
+    <% } %>
+    
+
+  </ul>
+</header>
