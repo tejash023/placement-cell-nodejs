@@ -39,12 +39,12 @@ app.set('views', './views');
 
 //mongo store is used to store a session cookie
 app.use(session({
-  name: 'blog',
-  secret: 'tejashwarajvardhan',
+  name: 'placement_cell',
+  secret: 'redftyghy',
   saveUninitialized: false,
   resave: false,
   store: MongoStore.create({
-    mongoUrl:'mongodb://localhost/blog_post_db',
+    mongoUrl:'mongodb://localhost/placement_cell',
   }),
   cookie: {
     maxAge: (1000 * 60 * 100)

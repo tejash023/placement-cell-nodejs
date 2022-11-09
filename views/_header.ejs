@@ -2,15 +2,47 @@
   <h2>Placement Cell</h2>
   <ul>
     <% if(locals.user) { %>
-      <li> Hi, <%= user.name %> </li>
-      <li>
-        <a href="/user/sign-out">Sign Out</a>
-      </li>
+
+
+        <ul class="nav">
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="/dashboard">Dashboard</a>
+          </li> 
+          <li class="nav-item mx-2">
+            <a class="nav-link" aria-current="page" href="/student/add-student"
+              >Add new Student</a
+            >
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="/interview/add-interview"
+              >Add an Interview</a
+            >
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="/download">Download Report</a>
+          </li>
+        </ul>
+
+        <form >
+          <a class="btn btn-outline-secondary mx-2" href="/profile">
+            <i class="fa-regular fa-user"></i>
+            Hi, <%= user.name %></a
+          >
+          
+        </form>
+
+        
+        <li>
+          <a href="/sign-out">Sign Out</a>
+        </li>
 
     <%} else { %>
-      
+
       <li>
-        <a href="/user/signup">Sign Up</a>
+        <a href="/">Sign In</a>
+      </li>
+      <li>
+        <a href="/sign-up">Sign Up</a>
       </li>
     
     <% } %>
