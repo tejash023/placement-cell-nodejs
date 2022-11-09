@@ -1,0 +1,60 @@
+<% if (locals.user) {%>
+  <div class="container mt-4 col-md-4">
+  <h4>Add student</h4>
+
+  <form class="" action="/student/create" method="POST">
+
+    <div class="">
+      <label for="name" class="form-label">Name</label>
+      <input type="text" class="form-control" placeholder="Enter student name" id="name" name="name" required/>
+    </div>
+
+    <div class="">
+      <label for="email" class="form-label">Email</label>
+      <input type="text" class="form-control" placeholder="Enter student email" id="email" name="email" required/>
+    </div>
+
+    <div class="">
+      <label for="college" class="form-label">College</label>
+      <input type="college" class="form-control" placeholder="Enter student college" id="college" name="college" required/>
+    </div>
+
+    <div class="">
+        <label for="placement-status" class="form-label">Placement status</label>
+        <select id="placement-status" class="form-select" required name="placement_status">
+            <option selected>Not placed</option>
+            <option>Placed</option>
+        </select>
+    </div>
+
+    <div class="">
+        <label for="batch" class="form-label">Batch</label>
+        <input type="text" class="form-control" id="batch" placeholder="Enter batch no." name="batch" required/>
+    </div>
+
+    <div class="">
+      <label for="dsa-score" class="form-label">DSA score</label>
+      <input type="number" class="form-control" id="dsa-score" name="dsa_score" required/>
+    </div>
+
+    
+    <div class="">
+      <label for="webdev-score" class="form-label">WebDev score</label>
+      <input type="number" class="form-control" id="webdev-score" name="webdev_score" required/>
+    </div>
+
+    
+    <div class="">
+      <label for="react-score" class="form-label">React score</label>
+      <input type="number" class="form-control" id="react-score" name="react_score" required/>
+    </div>    
+    
+    <div class="">
+      <button type="submit" class="btn btn-primary">Add Student</button>
+    </div>
+
+  </form>
+</div>
+</div>
+
+<%} %>
