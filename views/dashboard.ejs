@@ -7,64 +7,58 @@
       <h3 class="students-heading">Students list</h3>
       <div class="students-list">
         <% for (student of all_students) {%>
-          
-          <div class="student-details-card">
-            <div class="student-details-card__basic-information">
-              <div class="student-details-card__basic-information__heading">
-                <p>Name</p>
-                <p>Batch</p>
-                <p>College</p>
-                <p>Status</p>
+
+          <div class="student-details">
+            <div class="student-details-card">
+
+              <!--Basic INFO-->
+              <div class="student-details-card__basic-information">
+                <div class="student-details-card__basic-information__heading">
+                  <p>Name</p>
+                  <p>Batch</p>
+                  <p>College</p>
+                  <p>Status</p>
+                </div>
+                <div class="student-details-card__basic-information__details">
+                  <p><%= student.name %></p>
+                  <p><%= student.batch %></p>
+                  <p><%= student.college %></p>
+                  <p><%= student.placement_status %></p>
+                </div>
               </div>
-              <div class="student-details-card__basic-information__details">
-                <p><%= student.name %></p>
-                <p><%= student.batch %></p>
-                <p><%= student.college %></p>
-                <p><%= student.placement_status %></p>
+  
+              <!--Student Scores-->
+              <div class="student-details-card__score">
+                <h3 class="student-details-card__score__heading">Scores</h3>
+                <table class="student-details-card__interviews__table" >
+                  <thead>
+                    <tr>
+                      <th scope="col">DSA</th>
+                      <th scope="col">WEBD</th>
+                      <th scope="col">React</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    
+                    <tr>
+                      <td><%= student.dsa_score %></td>
+                      <td><%= student.webdev_score %></td>
+                      <td><%= student.react_score %></td>
+                    </tr>
+                    
+                  </tbody>
+                </table>
               </div>
+  
+              <!--EDIT and DELETE STUDENTS-->
+              <div class="student-details-card__actions" >
+                <a href="/student/edit-student/<%= student.id %>" class="student-details-card__actions__button primary">Edit</a>
+  
+                <a href="/student/destroy/<%= student.id %>" class="student-details-card__actions__button danger"> Delete </a>
+              </div>
+  
             </div>
-
-            <!-- <div class="student-details-card__score">
-              <div class="student-details-card__score__heading">
-                <p>DSA</p>
-                <p>WEBD</p>
-                <p>React</p>
-              </div>
-              <div class="student-details-card__score__details">
-                <p><%= student.dsa_score %></p>
-                <p><%= student.webdev_score %></p>
-                <p><%= student.react_score %></p>
-              </div>
-            </div> -->
-
-            <div class="student-details-card_score2">
-              <h3 class="student-details-card__score__heading">Scores</h3>
-              <table class="student-details-card__interviews__table" >
-                <thead>
-                  <tr>
-                    <th scope="col">DSA</th>
-                    <th scope="col">WEB Dev</th>
-                    <th scope="col">React</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  
-                  <tr>
-                    <td><%= student.dsa_score %></td>
-                    <td><%= student.webdev_score %></td>
-                    <td><%= student.react_score %></td>
-                  </tr>
-                  
-                </tbody>
-              </table>
-            </div>
-
-            <div class="student-details-card__actions" >
-              <a href="/student/edit-student/<%= student.id %>" class="student-details-card__actions__button primary">Edit</a>
-
-              <a href="/student/destroy/<%= student.id %>" class="student-details-card__actions__button danger"> Delete </a>
-            </div>
-
+            <!--Student's Interview Details-->
             <div class="student-details-card__interviews">
               <h3 class="student-details-card__interviews__heading">Interviews</h3>
               <table class="student-details-card__interviews__table" >
@@ -87,9 +81,8 @@
               </table>
 
             </div>
-
           </div>
-
+          
         <%} %>
       </div>
     </div>

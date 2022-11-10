@@ -4,26 +4,32 @@
   margin: auto 5%; }
   .container-dashboard .students {
     overflow: auto; }
+  .container-dashboard .student-details {
+    display: flex;
+    flex-direction: column;
+    min-width: 25%; }
   .container-dashboard .students-list {
     display: flex;
     gap: 1rem;
     margin: 20px; }
-  .container-dashboard .student-details {
-    display: flex;
-    flex-direction: row; }
   .container-dashboard .student-details-card {
     background-color: #ff5722;
     color: white;
     padding: 10px;
-    min-width: 25%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 5px; }
     .container-dashboard .student-details-card__basic-information {
       display: flex;
-      justify-content: space-between; }
+      justify-content: space-between;
+      background: black;
+      color: white;
+      padding: 10px;
+      border-radius: 5px; }
+      .container-dashboard .student-details-card__basic-information__details p {
+        font-weight: 600;
+        color: #ff5722; }
     .container-dashboard .student-details-card__score {
-      display: flex;
-      justify-content: space-between; }
+      margin-bottom: 10px; }
     .container-dashboard .student-details-card__actions {
       display: flex;
       justify-content: space-around; }
@@ -32,22 +38,29 @@
         color: white;
         text-decoration: none;
         border-radius: 5px; }
-    .container-dashboard .student-details-card__interviews__table {
-      border-collapse: collapse;
-      width: 100%; }
-      .container-dashboard .student-details-card__interviews__table td, .container-dashboard .student-details-card__interviews__table th {
-        border: 1px solid #ddd;
-        padding: 8px; }
-      .container-dashboard .student-details-card__interviews__table tr:nth-child(even) {
-        background-color: #f2f2f2; }
-      .container-dashboard .student-details-card__interviews__table tr:hover {
-        background-color: #ddd; }
-      .container-dashboard .student-details-card__interviews__table th {
-        padding-top: 12px;
-        padding-bottom: 12px;
-        text-align: left;
-        background-color: #04AA6D;
-        color: white; }
+    .container-dashboard .student-details-card__interviews {
+      background-color: #ff5722;
+      color: white;
+      padding: 10px;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      border-radius: 5px;
+      margin-top: 20px; }
+      .container-dashboard .student-details-card__interviews__table {
+        border-collapse: collapse;
+        width: 100%; }
+        .container-dashboard .student-details-card__interviews__table td, .container-dashboard .student-details-card__interviews__table th {
+          border: 1px solid #ddd;
+          padding: 8px; }
+        .container-dashboard .student-details-card__interviews__table tr:nth-child(even) {
+          background-color: #f2f2f2; }
+        .container-dashboard .student-details-card__interviews__table tr:hover {
+          background-color: #ddd; }
+        .container-dashboard .student-details-card__interviews__table th {
+          padding-top: 12px;
+          padding-bottom: 12px;
+          text-align: left;
+          background-color: #04AA6D;
+          color: white; }
   .container-dashboard .primary {
     background-color: #04AA6D; }
   .container-dashboard .danger {

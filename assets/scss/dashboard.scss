@@ -6,37 +6,47 @@
   .students{
     overflow: auto;
   }
+
+  .student-details{
+    display: flex;
+    flex-direction: column;
+    min-width: 25%;
+  }
   .students-list{
     display: flex;
     gap: 1rem;
     margin: 20px;
   }
 
-  .student-details{
-    display: flex;
-    flex-direction: row;
-  }
+ 
 
   .student-details-card{
     background-color: #ff5722;
     color: white;
     padding: 10px;
-    min-width: 25%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 5px;
 
     &__basic-information{
       display: flex;
       justify-content: space-between;
+      background: rgb(0, 0, 0);
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+      
 
       &__details{
-
+        p{
+          font-weight: 600;
+          color: #ff5722;
+        }
       }
     }
 
     &__score{
-      display: flex;
-      justify-content: space-between;
+      
+      margin-bottom: 10px;
     }
 
     &__actions{
@@ -55,6 +65,12 @@
 
     &__interviews{
 
+      background-color: #ff5722;
+      color: white;
+      padding: 10px;
+      box-shadow: rgba(0,0,0, 0.35) 0px 5px 15px;
+      border-radius: 5px;
+      margin-top: 20px;
 
       &__table{
         border-collapse: collapse;
