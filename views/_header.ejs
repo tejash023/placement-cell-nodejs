@@ -1,5 +1,5 @@
 <header>
-  <h2>Placement Cell</h2>
+  <h2 class="header-logo">Placement Cell</h2>
   <ul>
     <% if(locals.user) { %>
 
@@ -21,15 +21,15 @@
           <li class="">
             <a class="nav-link" href="/download">Download Report</a>
           </li>
+          <li class="">
+            <a class="btn btn-outline-secondary mx-2" href="/profile">
+              <i class="fa-regular fa-user"></i>
+              Hi, <%= user.name %></a
+            >
+          </li>
         </ul>
 
-        <form >
-          <a class="btn btn-outline-secondary mx-2" href="/profile">
-            <i class="fa-regular fa-user"></i>
-            Hi, <%= user.name %></a
-          >
-          
-        </form>
+      
 
         
         <li>
