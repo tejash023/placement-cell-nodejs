@@ -89,128 +89,89 @@
 
     <!-- Interviews section -->
     <div class="interview-list" >
-      <h3 class="mt-2">Scheduled Interviews</h3>
-      <div class="" style="width: 90%">
+
+      <h3 class="">Scheduled Interviews</h3>
+
+      <div class="interview-details" >
         <% for (interview of all_interviews) {%>
-        <div class="">
-          <h2 class="" id="headingOne">
-            <button
-              class=""
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapse<%= interview._id %>"
-              aria-expanded="false"
-              aria-controls="collapse<%= interview._id %>"
-            >
-              <span class=""
-                ><%= interview.company %></span
-              >
-            </button>
-          </h2>
-          <div
-            id="collapse<%= interview._id %>"
-            class="accordion-collapse collapse"
-            aria-labelledby="headingOne"
-            data-bs-parent="#accordionExample"
-          >
-            <div class="">
-              <table class="table">
-                <tbody>
-                  <tr>
-                    <th scope="row">Company</th>
-                    <td><%= interview.company %></td>
-                  </tr>
-                  <tr>
-                    <th scope="col">Date</th>
-                    <td><%= interview.date %></td>
-                  </tr>
-                </tbody>
-              </table>
-  
-              <div
-                class=""
-              >
+        <div class="interview-detail">
+
+          <!--Interview Information-->
+          <div class="interview-detail__information">
+
+            <!--Display Company Name and Date -->
+            <div class="interview-detail__information__date">
+              <p><%= interview.company %> </p>
+              <p>Date of Interview: <%= interview.date %></p>
+            </div>
+              
+              <!--Display Enrolled students-->
+              <div class="interview-detail__information__enrolled">
                 <h5>Enrolled students</h5>
-  
+
                 <% for (i of interview.students) {%>
-  
-                <div
-                  class=""
-                >
-                  <table class="table">
+                
+                <!--Enrolled students-->
+
+                  <table class="interview-detail__information__enrolled__table" >
+                    <thead>
+                      <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Result</th>
+                      </tr>
+                    </thead>
                     <tbody>
+                      
                       <tr>
-                        <td>Name</td>
                         <td><%= i.student.name %></td>
-                      </tr>
-                      <tr>
-                        <td>Email</td>
                         <td><%= i.student.email %></td>
-                      </tr>
-                      <tr>
-                        <td>Result</td>
                         <td><%= i.result %></td>
                       </tr>
+                      
                     </tbody>
                   </table>
-                  <a
-                    href="/interview/deallocate/<%= i.student.id %>/<%= interview.id %>"
-                    class="btn btn-danger ms-2 mb-2"
-                    style="width: 40%"
-                    >Delete</a
-                  >
-                </div>
-  
+                  <div class="interview-detail__information__enrolled__action">
+                    <a href="/interview/deallocate/<%= i.student.id %>/<%= interview.id %>" class="interview-detail__information__enrolled__action__button danger">Delete</a>
+                  </div>
+                  
                 <%} %>
+
               </div>
-  
-              <div
-                class=""
-              >
-                <h5 class="">Add student</h5>
-                <form
-                  class="container-fluid"
-                  action="/interview/enroll-in-interview/<%= interview.id %>"
-                  method="POST"
-                >
-                  <div class="mb-3">
-                    <label for="student_email" class="form-label"
-                      >Student email</label
-                    >
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="student_email"
-                      aria-describedby="emailHelp"
-                      name="email"
-                      required
-                    />
-                  </div>
-                  <div class="mb-3">
-                    <label for="result" class="form-label">Result</label>
-                    <select
-                      id="result"
-                      class="form-select"
-                      name="result"
-                      required
-                    >
-                      <option selected>PASS</option>
-                      <option>FAIL</option>
-                      <option>On Hold</option>
-                      <option>Didn't attempt</option>
-                    </select>
-                  </div>
-                  <button type="submit" class="btn btn-primary">
-                    &nbsp; Add &nbsp;
-                  </button>
-                </form>
-              </div>
-            </div>
+
           </div>
+
+          <!--Adding a student for interview-->
+          <div class="interview-detail__add">
+              <h5 class="">Add student</h5>
+              <form class="container-fluid" action="/interview/enroll-in-interview/<%= interview.id %>" method="POST">
+                <div>
+                  <label for="student_email" class="form-label">Student email</label>
+                  <input type="email" name="email" required/>
+                </div>
+
+                <div >
+                  <label for="result" class="form-label">Result</label>
+                  <select id="result" class="form-select" name="result" required >
+                    <option selected>PASS</option>
+                    <option>FAIL</option>
+                    <option>On Hold</option>
+                    <option>Didn't attempt</option>
+                  </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Add </button>
+              </form>
+
+          </div>
+
         </div>
+
         <%} %>
+
       </div>
+
     </div>
+
   </div>
   <%} %>
   

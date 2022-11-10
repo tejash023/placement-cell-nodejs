@@ -65,3 +65,49 @@
     background-color: #04AA6D; }
   .container-dashboard .danger {
     background-color: red; }
+  .container-dashboard .interview-list .interview-details {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem; }
+  .container-dashboard .interview-list .interview-detail__information {
+    background-color: #ff5722;
+    color: white;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5px;
+    margin-top: 20px; }
+    .container-dashboard .interview-list .interview-detail__information__date {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+    .container-dashboard .interview-list .interview-detail__information__enrolled__table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-bottom: 15px; }
+      .container-dashboard .interview-list .interview-detail__information__enrolled__table td, .container-dashboard .interview-list .interview-detail__information__enrolled__table th {
+        border: 1px solid #ddd;
+        padding: 8px; }
+      .container-dashboard .interview-list .interview-detail__information__enrolled__table tr:nth-child(even) {
+        background-color: #f2f2f2; }
+      .container-dashboard .interview-list .interview-detail__information__enrolled__table tr:hover {
+        background-color: #ddd; }
+      .container-dashboard .interview-list .interview-detail__information__enrolled__table th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #04AA6D;
+        color: white; }
+    .container-dashboard .interview-list .interview-detail__information__enrolled__action {
+      margin-bottom: 10px; }
+      .container-dashboard .interview-list .interview-detail__information__enrolled__action__button {
+        padding: 6px 15px;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px; }
+  .container-dashboard .interview-list .interview-detail__add {
+    background-color: #ff5722;
+    color: white;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5px;
+    margin: 20px 0; }

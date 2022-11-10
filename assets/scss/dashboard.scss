@@ -107,4 +107,81 @@
   .danger{
     background-color: red;
   }
+
+
+  //interview details
+  .interview-list{
+
+    .interview-details{
+      display: flex;
+      flex-direction: row;
+      gap: 2rem;
+    }
+
+    .interview-detail{
+
+      &__information{
+
+        background-color: #ff5722;
+        color: white;
+        padding: 10px;
+        box-shadow: rgba(0,0,0, 0.35) 0px 5px 15px;
+        border-radius: 5px;
+        margin-top: 20px;
+
+        &__date{
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+        }
+
+        &__enrolled{
+          &__table{
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 15px;
+            td, th{
+              border: 1px solid #ddd;
+              padding: 8px;
+            }
+    
+            tr:nth-child(even){
+              background-color: #f2f2f2;
+            }
+    
+            tr:hover {
+              background-color: #ddd;
+            }
+    
+            th{
+              padding-top: 12px;
+              padding-bottom: 12px;
+              text-align: left;
+              background-color: #04AA6D;
+              color: white;
+            }
+          }
+          &__action{
+            margin-bottom: 10px;
+            &__button{
+              padding: 6px 15px;
+              color: white;
+              text-decoration: none;
+              border-radius: 5px;
+            }
+            
+          }
+        }
+      }
+
+      &__add{
+        background-color: #ff5722;
+        color: white;
+        padding: 10px;
+        box-shadow: rgba(0,0,0, 0.35) 0px 5px 15px;
+        border-radius: 5px;
+        margin: 20px 0;
+      }
+    }
+  }
 }
