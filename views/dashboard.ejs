@@ -60,7 +60,7 @@
             </div>
             <!--Student's Interview Details-->
             <div class="student-details-card__interviews">
-              <h3 class="student-details-card__interviews__heading">Interviews</h3>
+              <p class="student-details-card__interviews__heading">Interviews Status</p>
               <table class="student-details-card__interviews__table" >
                 <thead>
                   <tr>
@@ -90,7 +90,7 @@
     <!-- Interviews section -->
     <div class="interview-list" >
 
-      <h3 class="">Scheduled Interviews</h3>
+      <h3 class="interview-heading">Scheduled Interviews</h3>
 
       <div class="interview-details" >
         <% for (interview of all_interviews) {%>
@@ -101,13 +101,14 @@
 
             <!--Display Company Name and Date -->
             <div class="interview-detail__information__date">
-              <p><%= interview.company %> </p>
-              <p>Date of Interview: <%= interview.date %></p>
+              <p class="interview-detail__information__date__name"><%= interview.company %> </p>
+              <p class="interview-detail__information__date__doi">Date of Interview: <span><%= interview.date %></span> </p>
             </div>
               
               <!--Display Enrolled students-->
               <div class="interview-detail__information__enrolled">
-                <h5>Enrolled students</h5>
+                <hr class="interview-detail__information__enrolled__hr">
+                <p class="interview-detail__information__enrolled__heading">Enrolled students</p>
 
                 <% for (i of interview.students) {%>
                 
@@ -139,30 +140,34 @@
 
               </div>
 
-          </div>
-
-          <!--Adding a student for interview-->
+              <!--Adding a student for interview-->
           <div class="interview-detail__add">
-              <h5 class="">Add student</h5>
-              <form class="container-fluid" action="/interview/enroll-in-interview/<%= interview.id %>" method="POST">
-                <div>
-                  <label for="student_email" class="form-label">Student email</label>
-                  <input type="email" name="email" required/>
-                </div>
+            <hr class="interview-detail__add__hr">
+            <p class="interview-detail__add__heading">Add student</p>
+            <form class="container-fluid" action="/interview/enroll-in-interview/<%= interview.id %>" method="POST">
+              <div class="interview-detail__add__email">
+                
+                <input type="email" name="email" placeholder="Student's Email" required/>
+              </div>
 
-                <div >
-                  <label for="result" class="form-label">Result</label>
-                  <select id="result" class="form-select" name="result" required >
-                    <option selected>PASS</option>
-                    <option>FAIL</option>
-                    <option>On Hold</option>
-                    <option>Didn't attempt</option>
-                  </select>
-                </div>
-                <button type="submit" class="btn btn-primary">Add </button>
-              </form>
+              <div class="interview-detail__add__result">
+                
+                <select id="result" class="form-select" name="result" required >
+                  <option selected>PASS</option>
+                  <option>FAIL</option>
+                  <option>On Hold</option>
+                  <option>Didn't attempt</option>
+                </select>
+
+              </div>
+              <button type="submit" class="interview-detail__add__button primary">Add </button>
+            </form>
+
+        </div>
 
           </div>
+
+          
 
         </div>
 

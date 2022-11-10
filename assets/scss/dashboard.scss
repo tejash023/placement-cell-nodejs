@@ -3,6 +3,15 @@
   flex-direction: column;
   margin: auto 5%;
 
+  .students-heading, .interview-heading{
+    /* background: whitesmoke; */
+    padding: 0px 19px;
+    font-size: 2rem;
+    /* border-radius: 5px; */
+    color: #239002;
+    margin: 15px 0;
+  }
+
   .students{
     overflow: auto;
   }
@@ -21,11 +30,13 @@
  
 
   .student-details-card{
-    background-color: #ff5722;
+    //background-color: #ff5722;
     color: white;
     padding: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 5px;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #ffab13 100%);
+
 
     &__basic-information{
       display: flex;
@@ -65,12 +76,18 @@
 
     &__interviews{
 
-      background-color: #ff5722;
+      background-color: #4f57ce;
       color: white;
       padding: 10px;
       box-shadow: rgba(0,0,0, 0.35) 0px 5px 15px;
       border-radius: 5px;
       margin-top: 20px;
+
+      &__heading{
+        margin: 10px 0;
+        font-size: 1.25rem;
+
+      }
 
       &__table{
         border-collapse: collapse;
@@ -86,14 +103,15 @@
         }
 
         tr:hover {
-          background-color: #ddd;
+          background-color: white;
+          color: black;
         }
 
         th{
           padding-top: 12px;
           padding-bottom: 12px;
           text-align: left;
-          background-color: #04AA6D;
+          background-color: #239002;
           color: white;
         }
       }
@@ -101,7 +119,7 @@
   }
 
   .primary{
-    background-color: #04AA6D;
+    background-color: #239002;
   }
 
   .danger{
@@ -119,7 +137,8 @@
     }
 
     .interview-detail{
-
+      margin: 20px;
+      min-width: 25%;
       &__information{
 
         background-color: #ff5722;
@@ -133,9 +152,36 @@
           display: flex;
           flex-direction: column;
           justify-content: space-between;
+
+          &__name{
+            font-size: 2rem;
+            padding: 0;
+            margin: 0;
+            font-weight: 600;
+          }
+
+          &__doi{
+            font-size: 1rem;
+            span{
+              font-weight: 600;
+            }
+          }
         }
 
         &__enrolled{
+          &__hr{
+            display: block;
+            height: 1px;
+            border: 0;
+            border-top: 2px solid rgb(255, 255, 255);
+            margin: 1em 0;
+            padding: 0;
+          }
+          &__heading{
+            margin: 10px 0;
+            font: 1rem;
+            font-weight: 600;
+          }
           &__table{
             border-collapse: collapse;
             width: 100%;
@@ -150,14 +196,15 @@
             }
     
             tr:hover {
-              background-color: #ddd;
+              background-color: white;
+              color: black;
             }
     
             th{
               padding-top: 12px;
               padding-bottom: 12px;
               text-align: left;
-              background-color: #04AA6D;
+              background-color: #239002;
               color: white;
             }
           }
@@ -175,12 +222,52 @@
       }
 
       &__add{
-        background-color: #ff5722;
-        color: white;
-        padding: 10px;
-        box-shadow: rgba(0,0,0, 0.35) 0px 5px 15px;
-        border-radius: 5px;
         margin: 20px 0;
+        &__hr{
+          display: block;
+          height: 1px;
+          border: 0;
+          border-top: 2px solid rgb(255, 255, 255);
+          margin: 1em 0;
+          padding: 0;
+        }
+        &__heading{
+          margin: 10px 0;
+          font: 1rem;
+          font-weight: 600;
+        }
+        &__email{
+
+          input{
+            border: none;
+            outline: none;
+            padding: 8px 10px;
+            border-radius: 3px;
+            margin-bottom: 5px;
+            width: 80%;
+          }
+        }
+
+        &__result{
+          select{
+            outline: none;
+            border: none;
+            padding: 8px 5px;
+            border-radius: 3px;
+            margin: 10px 0px;
+          }
+        }
+
+        &__button{
+          outline: none;
+          border: none;
+          padding: 8px 17px;
+          font-size: 0.9rem;
+          text-transform: uppercase;
+          font-weight: 500;
+          border-radius: 3px;
+          color: white;
+        }
       }
     }
   }
