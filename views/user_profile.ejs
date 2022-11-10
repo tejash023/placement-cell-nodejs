@@ -1,25 +1,27 @@
+<link rel="stylesheet" href="/css/update-profile.css">
 <% if(user.id == profile_user.id) {%>
 
-  <div class="container">
-    <h3 class="">Update profile</h3>
+  <div class="container-update-profile">
+    <h3 class="container-update-profile__heading">Update profile</h3>
     <form
       action="/update"
       method="POST"
-      class="""
+      class="update-profile"
     >
-      <div class="">
-        <label for="username" class="form-label">username</label>
+      <div class="update-profile__class">
+        
         <input
           type="text"
           class="form-control"
           id="username"
           name="username"
+          placeholder="Username"
           value="<%= profile_user.username %>"
           required
         />
       </div>
-      <div class="">
-        <label for="password" class="form-label">New password</label>
+      <div class="update-profile__class">
+        
         <input
           type="password"
           class="form-control"
@@ -29,8 +31,8 @@
           required
         />
       </div>
-      <div class="">
-        <label for="confirm_password" class="form-label">Confirm Password</label>
+      <div class="update-profile__class">
+        
         <input
           type="password"
           class="form-control"
@@ -41,7 +43,7 @@
         />
       </div>
   
-      <button type="submit" class="btn btn-primary">Update</button>
+      <button type="submit" class="update-profile__class__btn">Update</button>
     </form>
   </div>
   

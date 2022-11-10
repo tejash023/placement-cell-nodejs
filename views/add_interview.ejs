@@ -1,20 +1,21 @@
+<link rel="stylesheet" href="/css/add-interview.css">
 <% if (locals.user) {%>
-  <div class="container">
-  <h4>Add an interview </h4>
+  <div class="container-add-interview">
+  <p class="container-add-interview__heading">Add an interview </p>
 
-  <form class="" action="/interview/create" method="POST">
+  <form class="add-interview" action="/interview/create" method="POST">
 
-    <div class="">
-      <label for="company" class="form-label">Company</label>
+    <div class="add-interview__class company">
+      
       <input type="text" class="form-control" placeholder="Enter company name" id="company" name="company" required />
     </div>
 
-    <div class="">
-      <label for="date" class="form-label">Date</label>
+    <div class="add-interview__class date">
+      
       <input type="date" class="form-control" placeholder="Enter interview date" id="date" name="date" required />
     </div>
 
-    <div class="">
+    <div class="add-interview__class__btn">
       <button type="submit" class="btn btn-primary">Add interview</button>
     </div>
 

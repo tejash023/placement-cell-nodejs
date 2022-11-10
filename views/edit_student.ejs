@@ -1,10 +1,12 @@
+
+<link rel="stylesheet" href="/css/edit-student.css">
 <% if (locals.user) {%>
-  <div class="container">
-  <h4>Edit student details</h4>
+  <div class="container-edit-student">
+  <p class="container-edit-student__heading">Edit student details</p>
 
-  <form class="" action="/student/update/<%= student_details.id %>" method="POST">
+  <form class="edit-student" action="/student/update/<%= student_details.id %>" method="POST">
 
-    <div class="">
+    <div class="edit-student__class name">
       <label for="name" class="form-label">Name</label>
       <input
         type="text"
@@ -17,8 +19,8 @@
       />
     </div>
 
-    <div class="">
-      <label for="college" class="form-label">college</label>
+    <div class="edit-student__class college">
+      <label for="college" class="form-label">College</label>
       <input
         type="text"
         class="form-control"
@@ -30,7 +32,7 @@
       />
     </div>
 
-    <div class="">
+    <div class="edit-student__class placement-status">
         <label for="placement-status" class="form-label">Placement status</label>
         <select id="placement-status" class="form-select" required name="placement_status">
             <option selected>Not Placed</option>
@@ -38,30 +40,30 @@
         </select>
     </div>
 
-    <div class="">
+    <div class="edit-student__class batch">
         <label for="batch" class="form-label">Batch</label>
         <input type="text" class="form-control" id="batch" placeholder="Enter batch no." name="batch" value="<%= student_details.batch %>" required/>
     </div>
 
-    <div class="">
+    <div class="edit-student__class dsa-score">
       <label for="dsa-score" class="form-label">DSA score</label>
       <input type="text" class="form-control" id="dsa-score" name="dsa_score" value="<%= student_details.dsa_score %>" required/>
     </div>
 
     
-    <div class="">
+    <div class="edit-student__class webdev-score">
       <label for="webdev-score" class="form-label">WebDev score</label>
       <input type="text" class="form-control" id="webdev-score" name="webdev_score" value="<%= student_details.webdev_score %>"required/>
     </div>
 
     
-    <div class="">
+    <div class="edit-student__class react-score">
       <label for="react-score" class="form-label">React score</label>
       <input type="text" class="form-control" id="react-score" name="react_score" value="<%= student_details.react_score %>"required/>
     </div>    
     
-    <div class="">
-      <button type="submit" class="btn btn-primary">Update</button>
+    <div class="edit-student__class__btn">
+      <button type="submit" >Update</button>
     </div>
 
   </form>
