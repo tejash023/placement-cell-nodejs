@@ -24,7 +24,7 @@
               </div>
             </div>
 
-            <div class="student-details-card__score">
+            <!-- <div class="student-details-card__score">
               <div class="student-details-card__score__heading">
                 <p>DSA</p>
                 <p>WEBD</p>
@@ -35,12 +35,34 @@
                 <p><%= student.webdev_score %></p>
                 <p><%= student.react_score %></p>
               </div>
+            </div> -->
+
+            <div class="student-details-card_score2">
+              <h3 class="student-details-card__score__heading">Scores</h3>
+              <table class="student-details-card__interviews__table" >
+                <thead>
+                  <tr>
+                    <th scope="col">DSA</th>
+                    <th scope="col">WEB Dev</th>
+                    <th scope="col">React</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  
+                  <tr>
+                    <td><%= student.dsa_score %></td>
+                    <td><%= student.webdev_score %></td>
+                    <td><%= student.react_score %></td>
+                  </tr>
+                  
+                </tbody>
+              </table>
             </div>
 
             <div class="student-details-card__actions" >
-              <a href="/student/edit-student/<%= student.id %>" class="student-details-card__actions__primary">Edit</a>
+              <a href="/student/edit-student/<%= student.id %>" class="student-details-card__actions__button primary">Edit</a>
 
-              <a href="/student/destroy/<%= student.id %>" class="student-details-card__actions__danger"> Delete </a>
+              <a href="/student/destroy/<%= student.id %>" class="student-details-card__actions__button danger"> Delete </a>
             </div>
 
             <div class="student-details-card__interviews">

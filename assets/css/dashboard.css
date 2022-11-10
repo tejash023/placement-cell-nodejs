@@ -2,15 +2,22 @@
   display: flex;
   flex-direction: column;
   margin: auto 5%; }
+  .container-dashboard .students {
+    overflow: auto; }
   .container-dashboard .students-list {
     display: flex;
-    gap: 1rem; }
+    gap: 1rem;
+    margin: 20px; }
   .container-dashboard .student-details {
     display: flex;
     flex-direction: row; }
   .container-dashboard .student-details-card {
-    background-color: orangered;
-    color: white; }
+    background-color: #ff5722;
+    color: white;
+    padding: 10px;
+    min-width: 25%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5px; }
     .container-dashboard .student-details-card__basic-information {
       display: flex;
       justify-content: space-between; }
@@ -20,6 +27,11 @@
     .container-dashboard .student-details-card__actions {
       display: flex;
       justify-content: space-around; }
+      .container-dashboard .student-details-card__actions__button {
+        padding: 6px 15px;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px; }
     .container-dashboard .student-details-card__interviews__table {
       border-collapse: collapse;
       width: 100%; }
@@ -36,3 +48,7 @@
         text-align: left;
         background-color: #04AA6D;
         color: white; }
+  .container-dashboard .primary {
+    background-color: #04AA6D; }
+  .container-dashboard .danger {
+    background-color: red; }

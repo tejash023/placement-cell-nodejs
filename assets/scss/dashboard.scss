@@ -3,9 +3,13 @@
   flex-direction: column;
   margin: auto 5%;
 
+  .students{
+    overflow: auto;
+  }
   .students-list{
     display: flex;
     gap: 1rem;
+    margin: 20px;
   }
 
   .student-details{
@@ -14,13 +18,20 @@
   }
 
   .student-details-card{
-    background-color: orangered;
+    background-color: #ff5722;
     color: white;
-    ;
+    padding: 10px;
+    min-width: 25%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5px;
 
     &__basic-information{
       display: flex;
       justify-content: space-between;
+
+      &__details{
+
+      }
     }
 
     &__score{
@@ -31,6 +42,15 @@
     &__actions{
       display: flex;
       justify-content: space-around;
+
+      &__button{
+        padding: 6px 15px;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+       
+
+      }
     }
 
     &__interviews{
@@ -62,5 +82,13 @@
         }
       }
     }
+  }
+
+  .primary{
+    background-color: #04AA6D;
+  }
+
+  .danger{
+    background-color: red;
   }
 }
