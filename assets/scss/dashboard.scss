@@ -1,0 +1,66 @@
+.container-dashboard{
+  display: flex;
+  flex-direction: column;
+  margin: auto 5%;
+
+  .students-list{
+    display: flex;
+    gap: 1rem;
+  }
+
+  .student-details{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .student-details-card{
+    background-color: orangered;
+    color: white;
+    ;
+
+    &__basic-information{
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__score{
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__actions{
+      display: flex;
+      justify-content: space-around;
+    }
+
+    &__interviews{
+
+
+      &__table{
+        border-collapse: collapse;
+        width: 100%;
+
+        td, th{
+          border: 1px solid #ddd;
+          padding: 8px;
+        }
+
+        tr:nth-child(even){
+          background-color: #f2f2f2;
+        }
+
+        tr:hover {
+          background-color: #ddd;
+        }
+
+        th{
+          padding-top: 12px;
+          padding-bottom: 12px;
+          text-align: left;
+          background-color: #04AA6D;
+          color: white;
+        }
+      }
+    }
+  }
+}

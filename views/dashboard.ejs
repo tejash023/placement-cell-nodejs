@@ -1,146 +1,93 @@
+<link rel="stylesheet" href="/css/dashboard.css">
 <% if(locals.user) {%>
-  <div class="d-flex m-0 mt-5 p-2 flex-wrap justify-content-center">
+  <div class="container-dashboard">
+
     <!-- Student list section -->
-    <div
-      class="d-flex flex-column align-items-center p-2 mx-auto my-2 container-sm border rounded"
-      style="
-        max-width: 600px;
-        min-height: 200px;
-        max-height: 600px;
-        overflow-y: auto;
-      "
-    >
-      <h3 class="mt-2">Students list</h3>
-      <div class="accordion accordion-flush" style="width: 90%">
+    <div class="students" >
+      <h3 class="students-heading">Students list</h3>
+      <div class="students-list">
         <% for (student of all_students) {%>
-        <div class="accordion-item my-2 border border-1 rounded">
-          <h2 class="accordion-header" id="headingOne">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapse<%= student._id %>"
-              aria-expanded="false"
-              aria-controls="collapse<%= student._id %>"
-            >
-              <span class="fw-semibold text-capitalize"><%= student.name %></span>
-            </button>
-          </h2>
-          <div
-            id="collapse<%= student._id %>"
-            class="accordion-collapse collapse"
-            aria-labelledby="headingOne"
-            data-bs-parent="#accordionExample"
-          >
-            <div class="accordion-body d-flex flex-column">
-              <table class="table table-striped border">
-                <tbody>
-                  <tr>
-                    <td>Name</td>
-                    <td><%= student.name %></td>
-                  </tr>
-                  <tr>
-                    <td>Email</td>
-                    <td><%= student.email %></td>
-                  </tr>
-                  <tr>
-                    <td>College</td>
-                    <td><%= student.college %></td>
-                  </tr>
-                  <tr>
-                    <td>Batch</td>
-                    <td><%= student.batch %></td>
-                  </tr>
-                  <tr>
-                    <td>Status</td>
-                    <td><%= student.placement_status %></td>
-                  </tr>
-                  <tr>
-                    <td>DSA score</td>
-                    <td><%= student.dsa_score %></td>
-                  </tr>
-                  <tr>
-                    <td>Web development score</td>
-                    <td><%= student.webdev_score %></td>
-                  </tr>
-                  <tr>
-                    <td>React score</td>
-                    <td><%= student.react_score %></td>
-                  </tr>
-                </tbody>
-              </table>
-              <div class="d-flex justify-content-around" style="width: 100%">
-                <a
-                  href="/student/edit-student/<%= student.id %>"
-                  class="btn btn-primary"
-                  style="width: 40%"
-                >
-                  Edit
-                </a>
-                <a
-                  href="/student/destroy/<%= student.id %>"
-                  class="btn btn-danger"
-                  style="width: 40%"
-                >
-                  Delete
-                </a>
+          
+          <div class="student-details-card">
+            <div class="student-details-card__basic-information">
+              <div class="student-details-card__basic-information__heading">
+                <p>Name</p>
+                <p>Batch</p>
+                <p>College</p>
+                <p>Status</p>
               </div>
-  
-              <div
-                class="mt-3 d-flex border-top flex-column align-items-center"
-                style="width: 100%"
-              >
-                <h3 class="mt-2">Interviews</h3>
-  
-                <table style="width: 100%">
-                  <thead>
-                    <tr>
-                      <th scope="col">Company</th>
-                      <th scope="col">Date</th>
-                      <th scope="col">Result</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <% for(interview of student.interviews) {%>
-                    <tr class="text-capitalize">
-                      <td><%= interview.company %></td>
-                      <td><%= interview.date %></td>
-                      <td><%= interview.result %></td>
-                    </tr>
-                    <%} %>
-                  </tbody>
-                </table>
+              <div class="student-details-card__basic-information__details">
+                <p><%= student.name %></p>
+                <p><%= student.batch %></p>
+                <p><%= student.college %></p>
+                <p><%= student.placement_status %></p>
               </div>
             </div>
+
+            <div class="student-details-card__score">
+              <div class="student-details-card__score__heading">
+                <p>DSA</p>
+                <p>WEBD</p>
+                <p>React</p>
+              </div>
+              <div class="student-details-card__score__details">
+                <p><%= student.dsa_score %></p>
+                <p><%= student.webdev_score %></p>
+                <p><%= student.react_score %></p>
+              </div>
+            </div>
+
+            <div class="student-details-card__actions" >
+              <a href="/student/edit-student/<%= student.id %>" class="student-details-card__actions__primary">Edit</a>
+
+              <a href="/student/destroy/<%= student.id %>" class="student-details-card__actions__danger"> Delete </a>
+            </div>
+
+            <div class="student-details-card__interviews">
+              <h3 class="student-details-card__interviews__heading">Interviews</h3>
+              <table class="student-details-card__interviews__table" >
+                <thead>
+                  <tr>
+                    <th scope="col">Company</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Result</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <% for(interview of student.interviews) {%>
+                  <tr>
+                    <td><%= interview.company %></td>
+                    <td><%= interview.date %></td>
+                    <td><%= interview.result %></td>
+                  </tr>
+                  <%} %>
+                </tbody>
+              </table>
+
+            </div>
+
           </div>
-        </div>
+
         <%} %>
       </div>
     </div>
+
     <!-- Interviews section -->
-    <div
-      class="d-flex flex-column align-items-center p-2 mx-auto my-2 container-sm border rounded"
-      style="
-        max-width: 600px;
-        min-height: 200px;
-        max-height: 600px;
-        overflow-y: auto;
-      "
-    >
+    <div class="interview-list" >
       <h3 class="mt-2">Scheduled Interviews</h3>
-      <div class="accordion accordion-flush" style="width: 90%">
+      <div class="" style="width: 90%">
         <% for (interview of all_interviews) {%>
-        <div class="accordion-item my-2 border border-1 rounded">
-          <h2 class="accordion-header" id="headingOne">
+        <div class="">
+          <h2 class="" id="headingOne">
             <button
-              class="accordion-button collapsed"
+              class=""
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#collapse<%= interview._id %>"
               aria-expanded="false"
               aria-controls="collapse<%= interview._id %>"
             >
-              <span class="fw-semibold font-seigeUi text-uppercase"
+              <span class=""
                 ><%= interview.company %></span
               >
             </button>
@@ -151,7 +98,7 @@
             aria-labelledby="headingOne"
             data-bs-parent="#accordionExample"
           >
-            <div class="accordion-body d-flex flex-column align-items-center">
+            <div class="">
               <table class="table">
                 <tbody>
                   <tr>
@@ -166,16 +113,14 @@
               </table>
   
               <div
-                class="d-flex flex-column align-items-center"
-                style="width: 100%"
+                class=""
               >
                 <h5>Enrolled students</h5>
   
                 <% for (i of interview.students) {%>
   
                 <div
-                  class="border border-secondry rounded mb-2"
-                  style="width: 100%"
+                  class=""
                 >
                   <table class="table">
                     <tbody>
@@ -205,10 +150,9 @@
               </div>
   
               <div
-                class="d-flex flex-column align-items-center border rounded p-2 m-2 shadow-sm"
-                style="width: 100%"
+                class=""
               >
-                <h5 class="mt-2">Add student</h5>
+                <h5 class="">Add student</h5>
                 <form
                   class="container-fluid"
                   action="/interview/enroll-in-interview/<%= interview.id %>"

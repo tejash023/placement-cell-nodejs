@@ -1,0 +1,38 @@
+.container-dashboard {
+  display: flex;
+  flex-direction: column;
+  margin: auto 5%; }
+  .container-dashboard .students-list {
+    display: flex;
+    gap: 1rem; }
+  .container-dashboard .student-details {
+    display: flex;
+    flex-direction: row; }
+  .container-dashboard .student-details-card {
+    background-color: orangered;
+    color: white; }
+    .container-dashboard .student-details-card__basic-information {
+      display: flex;
+      justify-content: space-between; }
+    .container-dashboard .student-details-card__score {
+      display: flex;
+      justify-content: space-between; }
+    .container-dashboard .student-details-card__actions {
+      display: flex;
+      justify-content: space-around; }
+    .container-dashboard .student-details-card__interviews__table {
+      border-collapse: collapse;
+      width: 100%; }
+      .container-dashboard .student-details-card__interviews__table td, .container-dashboard .student-details-card__interviews__table th {
+        border: 1px solid #ddd;
+        padding: 8px; }
+      .container-dashboard .student-details-card__interviews__table tr:nth-child(even) {
+        background-color: #f2f2f2; }
+      .container-dashboard .student-details-card__interviews__table tr:hover {
+        background-color: #ddd; }
+      .container-dashboard .student-details-card__interviews__table th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #04AA6D;
+        color: white; }
