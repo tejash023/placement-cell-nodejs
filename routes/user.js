@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const passport = require('passport');
 
+const {downloadCSVReport} = require('../controllers/csv_controller');
 const userController = require('../controllers/user_controller');
 const homeController = require('../controllers/home_controller');
 
@@ -24,6 +25,6 @@ router.post('/create-session', passport.authenticate(
 
 router.get('/sign-out', userController.destroySession);
 
-
+router.get("/download", downloadCSVReport);
 
 module.exports = router;

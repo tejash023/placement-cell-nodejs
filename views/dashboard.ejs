@@ -120,6 +120,7 @@
                         <th scope="col">Name</th>
                         <th scope="col">Email</th>
                         <th scope="col">Result</th>
+                        <th><a href="/interview/deallocate/<%= i.student.id %>/<%= interview.id %>" class="interview-detail__information__enrolled__action__button"><i class="fa-solid fa-trash"></i></a></th>
                       </tr>
                     </thead>
                     <tbody>
@@ -128,13 +129,14 @@
                         <td><%= i.student.name %></td>
                         <td><%= i.student.email %></td>
                         <td><%= i.result %></td>
+                        <td></td>
                       </tr>
                       
                     </tbody>
                   </table>
-                  <div class="interview-detail__information__enrolled__action">
-                    <a href="/interview/deallocate/<%= i.student.id %>/<%= interview.id %>" class="interview-detail__information__enrolled__action__button danger">Delete</a>
-                  </div>
+                  <!-- <div class="interview-detail__information__enrolled__action">
+                    
+                  </div> -->
                   
                 <%} %>
 
