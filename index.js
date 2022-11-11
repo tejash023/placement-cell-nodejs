@@ -1,7 +1,11 @@
 const { urlencoded } = require('express');
 const express = require('express');
+const env = require('./config/environment');
+const logger = require('morgan');
+
 const cookieParser = require('cookie-parser');
 const app = express();
+require('./config/view-helpers')(app);
 const port = 8080;
 
 const expressLayouts  = require('express-ejs-layouts');
@@ -14,22 +18,28 @@ const passportLocal = require('./config/passport-local-strategy');
 const MongoStore = require('connect-mongo');
 const flash = require('connect-flash');
 const customMware = require('./config/middleware');
+const path = require('path');
 
 //middleware to use assets
-app.use(
-  sassMiddleware({
-  src: './assets/scss',
-  dest: './assets/css',
-  debug: true,
-  outputStyle: 'extended',
-  prefix:  '/css' ,
-  }
-));
-app.use(express.static('assets'));
+
+//sass needs not be run everytime in prod
+if(env.name == 'development'){
+  app.use(
+    sassMiddleware({
+    src: path.join(__dirname, env.asset_path, 'scss'),
+    dest: path.join(__dirname, env.asset_path, 'css'),
+    debug: true,
+    outputStyle: 'extended',
+    prefix:  '/css' ,
+    }
+  ));
+}
+app.use(express.static(env.asset_path));
 app.use(express.urlencoded());
 app.use(cookieParser());
 app.use(expressLayouts);
 
+app.use(logger(env.morgan.mode, env.morgan.options));
 
 //extract styles and scripts from layouts
 app.set('layout extractStyles', true);
@@ -42,7 +52,7 @@ app.set('views', './views');
 //mongo store is used to store a session cookie
 app.use(session({
   name: 'placement_cell',
-  secret: 'redftyghy',
+  secret: env.session_cookie_key,
   saveUninitialized: false,
   resave: false,
   store: MongoStore.create({

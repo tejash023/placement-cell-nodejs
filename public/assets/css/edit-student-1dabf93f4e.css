@@ -1,0 +1,47 @@
+.container-edit-student {
+  margin: auto 25%; }
+  .container-edit-student__heading {
+    font-size: 2rem;
+    color: green;
+    font-weight: 600;
+    text-transform: uppercase; }
+  .container-edit-student .edit-student {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; }
+    .container-edit-student .edit-student__class {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-content: space-around;
+      justify-content: space-between;
+      align-items: center; }
+      .container-edit-student .edit-student__class input {
+        padding: 8px 15px;
+        border: 1.5px solid green;
+        outline: none;
+        border-radius: 50px;
+        font-size: 0.9rem;
+        width: 25%; }
+      .container-edit-student .edit-student__class label {
+        margin-right: 20px; }
+      .container-edit-student .edit-student__class select {
+        padding: 8px 15px;
+        border: 1.5px solid green;
+        outline: none;
+        border-radius: 50px;
+        font-size: 0.9rem;
+        width: 16%; }
+      .container-edit-student .edit-student__class__btn button {
+        padding: 8px 15px;
+        background-color: green;
+        outline: none;
+        border-radius: 50px;
+        font-size: 0.9rem;
+        width: 28%;
+        margin-bottom: 10px;
+        color: white;
+        border: none; }
+      .container-edit-student .edit-student__class__btn button:hover {
+        cursor: pointer;
+        background-color: #014801; }

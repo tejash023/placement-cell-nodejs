@@ -1,0 +1,41 @@
+.container-update-profile {
+  margin: auto 5%;
+  height: 75vh; }
+  .container-update-profile__heading {
+    font-size: 2rem;
+    color: green;
+    font-weight: 600;
+    text-transform: uppercase; }
+  .container-update-profile .update-profile {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; }
+    .container-update-profile .update-profile__class input {
+      padding: 8px 15px;
+      border: 1.5px solid green;
+      outline: none;
+      border-radius: 50px;
+      font-size: 0.9rem;
+      width: 25%; }
+    .container-update-profile .update-profile__class label {
+      margin-left: 5px; }
+    .container-update-profile .update-profile__class select {
+      padding: 8px 15px;
+      border: 1.5px solid green;
+      outline: none;
+      border-radius: 50px;
+      font-size: 0.9rem;
+      width: 16%; }
+    .container-update-profile .update-profile__class__btn {
+      padding: 8px 15px;
+      background-color: green;
+      outline: none;
+      border-radius: 50px;
+      font-size: 0.9rem;
+      width: 28%;
+      margin-bottom: 10px;
+      color: white;
+      border: none; }
+    .container-update-profile .update-profile__class__btn:hover {
+      cursor: pointer;
+      background-color: #014801; }

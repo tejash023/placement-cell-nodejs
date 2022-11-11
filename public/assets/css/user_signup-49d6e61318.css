@@ -1,0 +1,55 @@
+.user-signup {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #239002;
+  width: 36vw;
+  /* height: 75vh; */
+  border-radius: 5px; }
+
+.signup-form h2 {
+  color: white; }
+
+.signup-form input {
+  border-radius: 5px;
+  padding: 10px 9px;
+  margin-bottom: 8px;
+  width: 80%;
+  outline: none;
+  border: none;
+  font-size: 0.9rem; }
+
+.signup-form button {
+  padding: 14px 20px;
+  margin-top: 8px;
+  border-radius: 5px;
+  background-color: white;
+  color: #0044d4;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600; }
+
+.signup-form a {
+  text-decoration: none;
+  color: white;
+  margin: 10px 0; }
+
+.signup-form span {
+  font-weight: 600; }
+
+#social-login {
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: black; }
+
+.fa-google {
+  margin-right: 5px; }

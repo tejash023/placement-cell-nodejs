@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="/css/user_signup.css">
+<link rel="stylesheet" href="<%= assetPath('css/user_signup.css') %>">
 <div class="user-signup">
   
   <form action="/create" method="POST" class="signup-form">
@@ -9,7 +9,7 @@
     <input type="password" name="confirm_password" placeholder="Confirm Password" required>
     <button type="submit">Sign up</button>
     <a href="/">Already Registered? <span>Sign in here</span></a>
-    <a id = "social-login" href="/user/auth/google"><i class="fa-solid fa-user-plus"></i> using <i class="fa-brands fa-google"></i></a>
+    <!-- <a id = "social-login" href="/user/auth/google"><i class="fa-solid fa-user-plus"></i> using <i class="fa-brands fa-google"></i></a> -->
     
 
   </form>
