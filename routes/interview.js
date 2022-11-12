@@ -10,6 +10,9 @@ router.post('/create', interviewController.create);
 
 router.post('/enroll-in-interview/:id', interviewController.enrollInInterview);
 
+//delete interview
+router.get('/destroy/:interviewId/', interviewController.deleteInterview);
+
 router.get('/deallocate/:studentId/:interviewId', interviewController.deallocate);
 
 module.exports = router;

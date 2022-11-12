@@ -131,3 +131,39 @@ module.exports.deallocate = async (req, res) => {
     req.flash("error", "Couldn't deallocate from interview");
   }
 };
+
+// Deletion of interview
+module.exports.deleteInterview = async (req, res) => {
+  
+  try {
+    const { interviewId} = req.params;
+    const interview = await Interview.findById(interviewId);
+    
+
+    for(i of interview.students){
+      
+      var studentId = (i.student._id.toString());
+    }
+
+    
+
+    if (!interview) {
+      req.flash("error", "Couldn't find student");
+      
+      return;
+    }
+
+    //remove interview from student's schema using interview's company
+    await Student.findOneAndUpdate(
+      { _id: studentId },
+      { $pull: { interviews: { company: interview.company } } }
+    );
+
+    interview.remove();
+    req.flash("success", "Student deleted!");
+    return res.redirect("back");
+  } catch (err) {
+    console.log("error", err);
+    return;
+  }
+};

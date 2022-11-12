@@ -102,7 +102,12 @@
             <!--Display Company Name and Date -->
             <div class="interview-detail__information__date">
               <p class="interview-detail__information__date__name"><%= interview.company %> </p>
-              <p class="interview-detail__information__date__doi">Date of Interview: <span><%= interview.date %></span> </p>
+              <div class="interview-detail__information__date__section">
+                <p class="interview-detail__information__date__doi">Interview: <span><%= interview.date %></span> </p>
+
+                <a href="/interview/destroy/<%= interview.id %>" class="interview-detail__information__enrolled__action__button"><i class="fa-solid fa-trash"></i></a>
+              </div>
+              
             </div>
               
               <!--Display Enrolled students-->

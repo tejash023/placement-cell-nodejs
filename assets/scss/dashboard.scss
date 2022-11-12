@@ -116,6 +116,8 @@
         }
       }
     }
+
+    
   }
 
   .primary{
@@ -142,7 +144,8 @@
       min-width: 25%;
       &__information{
 
-        background-color: #0f112d;
+        //0f112d
+        background-color: orangered;
         color: white;
         padding: 10px;
         box-shadow: rgba(0,0,0, 0.35) 0px 5px 15px;
@@ -271,5 +274,11 @@
         }
       }
     }
+  }
+
+  .interview-detail__information__date__div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 }

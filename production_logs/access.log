@@ -79,3 +79,284 @@
 ::1 - - [11/Nov/2022:14:47:51 +0000] "GET / HTTP/1.1" 304 - "http://localhost:8080/dashboard" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
 ::1 - - [11/Nov/2022:14:47:56 +0000] "GET /dashboard HTTP/1.1" 302 46 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
 ::1 - - [11/Nov/2022:14:47:56 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [11/Nov/2022:18:37:42 +0000] "GET / HTTP/1.1" 200 2093 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [11/Nov/2022:18:37:43 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [11/Nov/2022:18:37:45 +0000] "POST /create-session HTTP/1.1" 302 64 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [11/Nov/2022:18:37:45 +0000] "GET /dashboard HTTP/1.1" 200 7305 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [11/Nov/2022:18:37:47 +0000] "GET /sign-out HTTP/1.1" 302 46 "http://localhost:8080/dashboard" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [11/Nov/2022:18:37:47 +0000] "GET / HTTP/1.1" 304 - "http://localhost:8080/dashboard" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [11/Nov/2022:18:37:49 +0000] "POST /create-session HTTP/1.1" 302 46 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [11/Nov/2022:18:37:49 +0000] "GET / HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [11/Nov/2022:18:37:50 +0000] "POST /create-session HTTP/1.1" 302 64 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [11/Nov/2022:18:37:50 +0000] "GET /dashboard HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:07:33:45 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:07:33:45 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:07:34:02 +0000] "POST /create-session HTTP/1.1" 302 64 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:07:34:02 +0000] "GET /dashboard HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:07:34:08 +0000] "GET /interview/add-interview HTTP/1.1" 304 - "http://localhost:8080/dashboard" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:07:34:13 +0000] "POST /interview/create HTTP/1.1" 302 134 "http://localhost:8080/interview/add-interview" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:07:34:13 +0000] "GET /interview/add-interview HTTP/1.1" 304 - "http://localhost:8080/interview/add-interview" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:07:34:13 +0000] "GET /dashboard HTTP/1.1" 200 9258 "http://localhost:8080/interview/add-interview" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:07:50:50 +0000] "GET /dashboard HTTP/1.1" 500 2564 "http://localhost:8080/interview/add-interview" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:07:51:10 +0000] "GET /dashboard HTTP/1.1" 200 9732 "http://localhost:8080/interview/add-interview" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:07:51:44 +0000] "GET /dashboard HTTP/1.1" 200 9716 "http://localhost:8080/interview/add-interview" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:07:54:19 +0000] "GET /dashboard HTTP/1.1" 200 9726 "http://localhost:8080/interview/add-interview" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:07:55:43 +0000] "GET /dashboard HTTP/1.1" 304 - "http://localhost:8080/interview/add-interview" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:07:56:43 +0000] "GET /dashboard HTTP/1.1" 304 - "http://localhost:8080/interview/add-interview" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:07:56:45 +0000] "GET /dashboard HTTP/1.1" 304 - "http://localhost:8080/interview/add-interview" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:08:03:02 +0000] "GET /dashboard HTTP/1.1" 304 - "http://localhost:8080/interview/add-interview" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [12/Nov/2022:09:23:59 +0000] "GET /dashboard HTTP/1.1" 302 46 "http://localhost:8080/interview/add-interview" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [12/Nov/2022:09:23:59 +0000] "GET / HTTP/1.1" 304 - "http://localhost:8080/interview/add-interview" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [12/Nov/2022:09:24:01 +0000] "POST /create-session HTTP/1.1" 302 64 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [12/Nov/2022:09:24:01 +0000] "GET /dashboard HTTP/1.1" 200 9726 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [12/Nov/2022:09:24:04 +0000] "GET /dashboard HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::ffff:127.0.0.1 - - [12/Nov/2022:09:24:06 +0000] "GET /dashboard HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:09:25:05 +0000] "GET /dashboard HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:09:25:07 +0000] "GET /dashboard HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:09:27:41 +0000] "GET /dashboard HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:09:27:46 +0000] "GET /dashboard HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:09:27:52 +0000] "GET /dashboard HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:09:27:54 +0000] "GET /dashboard HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:09:28:25 +0000] "GET /dashboard HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:09:28:26 +0000] "GET /dashboard HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:09:29:54 +0000] "GET /dashboard HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:09:29:55 +0000] "GET /dashboard HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:09:30:03 +0000] "GET /dashboard HTTP/1.1" 302 46 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:09:30:03 +0000] "GET / HTTP/1.1" 200 2093 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:09:30:13 +0000] "POST /create-session HTTP/1.1" 302 64 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:09:30:13 +0000] "GET /dashboard HTTP/1.1" 200 9726 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:09:32:53 +0000] "GET /dashboard HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:09:34:46 +0000] "GET /dashboard HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:09:34:49 +0000] "GET /dashboard HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:09:34:49 +0000] "GET /dashboard HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:09:34:50 +0000] "GET /dashboard HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:09:35:31 +0000] "GET /dashboard HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:09:35:57 +0000] "GET /dashboard HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:09:42:57 +0000] "GET /dashboard HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:09:44:52 +0000] "GET /dashboard HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[0mGET /dashboard [36m302[0m 9.197 ms - 46[0m
+[0mGET / [36m304[0m 24.597 ms - -[0m
+[0mGET /css/layout-1fd63fd756.css [33m404[0m 24.678 ms - 164[0m
+[0mGET /css/user_signin-0ea267580e.css [33m404[0m 20.759 ms - 169[0m
+[0mGET /css/header-e61b99b042.css [33m404[0m 71.042 ms - 164[0m
+[0mGET /css/footer-823fcd6190.css [33m404[0m 55.566 ms - 164[0m
+[0mGET /css/layout-1fd63fd756.css [33m404[0m 16.921 ms - 164[0m
+[0mGET /css/header-e61b99b042.css [33m404[0m 22.093 ms - 164[0m
+[0mGET /css/user_signin-0ea267580e.css [33m404[0m 27.874 ms - 169[0m
+[0mGET /css/footer-823fcd6190.css [33m404[0m 32.881 ms - 164[0m
+[0mGET / [36m304[0m 5.168 ms - -[0m
+[0mGET /css/layout-1fd63fd756.css [33m404[0m 25.916 ms - 164[0m
+[0mGET /css/header-e61b99b042.css [33m404[0m 18.143 ms - 164[0m
+[0mGET /css/user_signin-0ea267580e.css [33m404[0m 21.040 ms - 169[0m
+[0mGET /css/footer-823fcd6190.css [33m404[0m 6.899 ms - 164[0m
+::1 - - [12/Nov/2022:09:48:20 +0000] "GET / HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:09:48:26 +0000] "POST /create-session HTTP/1.1" 302 46 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:09:48:26 +0000] "GET / HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:09:48:31 +0000] "POST /create-session HTTP/1.1" 302 64 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:09:48:31 +0000] "GET /dashboard HTTP/1.1" 200 9726 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:09:49:00 +0000] "GET /dashboard HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:09:49:08 +0000] "GET /dashboard HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:09:50:25 +0000] "GET /dashboard HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:09:51:39 +0000] "GET /dashboard HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:09:51:40 +0000] "GET /dashboard HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:09:51:41 +0000] "GET /dashboard HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:09:51:42 +0000] "GET /dashboard HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[0mGET /dashboard [36m302[0m 5.859 ms - 46[0m
+[0mGET / [36m304[0m 33.004 ms - -[0m
+[0mGET /css/layout-1fd63fd756.css [33m404[0m 29.145 ms - 164[0m
+[0mGET /css/user_signin-0ea267580e.css [33m404[0m 29.025 ms - 169[0m
+[0mGET /css/header-e61b99b042.css [33m404[0m 63.041 ms - 164[0m
+[0mGET /css/footer-823fcd6190.css [33m404[0m 63.851 ms - 164[0m
+[0mGET /css/layout-1fd63fd756.css [33m404[0m 24.524 ms - 164[0m
+[0mGET /css/header-e61b99b042.css [33m404[0m 23.514 ms - 164[0m
+[0mGET /css/footer-823fcd6190.css [33m404[0m 33.178 ms - 164[0m
+[0mGET /css/user_signin-0ea267580e.css [33m404[0m 29.524 ms - 169[0m
+[0mGET / [36m304[0m 7.342 ms - -[0m
+[0mGET /css/layout-1fd63fd756.css [33m404[0m 21.390 ms - 164[0m
+[0mGET /css/header-e61b99b042.css [33m404[0m 24.499 ms - 164[0m
+[0mGET /css/footer-823fcd6190.css [33m404[0m 23.578 ms - 164[0m
+[0mGET /css/user_signin-0ea267580e.css [33m404[0m 40.293 ms - 169[0m
+[0mGET / [36m304[0m 5.029 ms - -[0m
+[0mGET /css/layout-1fd63fd756.css [33m404[0m 17.741 ms - 164[0m
+[0mGET /css/header-e61b99b042.css [33m404[0m 20.027 ms - 164[0m
+[0mGET /css/footer-823fcd6190.css [33m404[0m 25.931 ms - 164[0m
+[0mGET /css/user_signin-0ea267580e.css [33m404[0m 25.114 ms - 169[0m
+::1 - - [12/Nov/2022:09:54:43 +0000] "GET / HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:09:54:49 +0000] "POST /create-session HTTP/1.1" 302 64 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:09:54:49 +0000] "GET /dashboard HTTP/1.1" 200 9726 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[0mGET /dashboard [36m302[0m 9.174 ms - 46[0m
+[0mGET / [36m304[0m 28.173 ms - -[0m
+[0mGET /css/layout-1fd63fd756.css [33m404[0m 32.433 ms - 164[0m
+[0mGET /css/user_signin-0ea267580e.css [33m404[0m 36.454 ms - 169[0m
+[0mGET /css/header-e61b99b042.css [33m404[0m 75.445 ms - 164[0m
+[0mGET /css/footer-823fcd6190.css [33m404[0m 81.308 ms - 164[0m
+[0mGET /css/layout-1fd63fd756.css [33m404[0m 20.636 ms - 164[0m
+[0mGET /css/header-e61b99b042.css [33m404[0m 22.837 ms - 164[0m
+[0mGET /css/footer-823fcd6190.css [33m404[0m 27.418 ms - 164[0m
+[0mGET /css/user_signin-0ea267580e.css [33m404[0m 48.892 ms - 169[0m
+[0mGET / [36m304[0m 26.290 ms - -[0m
+[0mGET /css/layout-1fd63fd756.css [33m404[0m 23.023 ms - 164[0m
+[0mGET /css/user_signin-0ea267580e.css [33m404[0m 19.211 ms - 169[0m
+[0mGET /css/header-e61b99b042.css [33m404[0m 55.755 ms - 164[0m
+[0mGET /css/footer-823fcd6190.css [33m404[0m 37.415 ms - 164[0m
+[0mGET / [36m304[0m 9.328 ms - -[0m
+[0mGET /css/layout-1fd63fd756.css [33m404[0m 16.962 ms - 164[0m
+[0mGET /css/header-e61b99b042.css [33m404[0m 17.240 ms - 164[0m
+[0mGET /css/footer-823fcd6190.css [33m404[0m 19.360 ms - 164[0m
+[0mGET /css/user_signin-0ea267580e.css [33m404[0m 32.910 ms - 169[0m
+[0mGET / [36m304[0m 27.071 ms - -[0m
+[0mGET /css/layout-1fd63fd756.css [33m404[0m 30.600 ms - 164[0m
+[0mGET /css/user_signin-0ea267580e.css [33m404[0m 30.628 ms - 169[0m
+[0mGET /css/header-e61b99b042.css [33m404[0m 58.687 ms - 164[0m
+[0mGET /css/footer-823fcd6190.css [33m404[0m 62.169 ms - 164[0m
+[0mGET /css/layout-1fd63fd756.css [33m404[0m 17.783 ms - 164[0m
+[0mGET /css/header-e61b99b042.css [33m404[0m 26.887 ms - 164[0m
+[0mGET /css/footer-823fcd6190.css [33m404[0m 27.889 ms - 164[0m
+[0mGET /css/user_signin-0ea267580e.css [33m404[0m 55.804 ms - 169[0m
+[0mGET / [36m304[0m 7.244 ms - -[0m
+[0mGET /css/layout-1fd63fd756.css [33m404[0m 24.162 ms - 164[0m
+[0mGET /css/header-e61b99b042.css [33m404[0m 26.925 ms - 164[0m
+[0mGET /css/footer-823fcd6190.css [33m404[0m 27.382 ms - 164[0m
+[0mGET /css/user_signin-0ea267580e.css [33m404[0m 19.594 ms - 169[0m
+[0mGET / [36m304[0m 42.871 ms - -[0m
+[0mGET /css/layout-1fd63fd756.css [33m404[0m 26.541 ms - 164[0m
+[0mGET /css/user_signin-0ea267580e.css [33m404[0m 33.259 ms - 169[0m
+[0mGET /css/header-e61b99b042.css [33m404[0m 66.329 ms - 164[0m
+[0mGET /css/footer-823fcd6190.css [33m404[0m 69.421 ms - 164[0m
+[0mGET / [36m304[0m 8.896 ms - -[0m
+[0mGET /css/layout-1fd63fd756.css [33m404[0m 9.836 ms - 164[0m
+[0mGET /css/header-e61b99b042.css [33m404[0m 16.241 ms - 164[0m
+[0mGET /css/footer-823fcd6190.css [33m404[0m 18.218 ms - 164[0m
+[0mGET /css/user_signin-0ea267580e.css [33m404[0m 18.035 ms - 169[0m
+[0mGET / [36m304[0m 4.601 ms - -[0m
+[0mGET /css/layout-1fd63fd756.css [33m404[0m 11.368 ms - 164[0m
+[0mGET /css/header-e61b99b042.css [33m404[0m 18.745 ms - 164[0m
+[0mGET /css/footer-823fcd6190.css [33m404[0m 19.337 ms - 164[0m
+[0mGET /css/user_signin-0ea267580e.css [33m404[0m 35.462 ms - 169[0m
+[0mGET / [36m304[0m 7.183 ms - -[0m
+[0mGET /css/layout-1fd63fd756.css [33m404[0m 12.812 ms - 164[0m
+[0mGET /css/header-e61b99b042.css [33m404[0m 19.596 ms - 164[0m
+[0mGET /css/footer-823fcd6190.css [33m404[0m 20.668 ms - 164[0m
+[0mGET /css/user_signin-0ea267580e.css [33m404[0m 24.593 ms - 169[0m
+[0mPOST /create-session [36m302[0m 10.739 ms - 46[0m
+[0mGET / [36m304[0m 12.669 ms - -[0m
+[0mGET /css/layout-1fd63fd756.css [33m404[0m 15.192 ms - 164[0m
+[0mGET /css/header-e61b99b042.css [33m404[0m 13.377 ms - 164[0m
+[0mGET /css/footer-823fcd6190.css [33m404[0m 12.288 ms - 164[0m
+[0mGET /css/user_signin-0ea267580e.css [33m404[0m 5.118 ms - 169[0m
+::1 - - [12/Nov/2022:10:06:32 +0000] "GET / HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:10:06:39 +0000] "POST /create-session HTTP/1.1" 302 64 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:10:06:39 +0000] "GET /dashboard HTTP/1.1" 200 9726 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:10:07:57 +0000] "GET /dashboard HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:10:07:58 +0000] "GET /dashboard HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[0mGET / [32m200[0m 41.665 ms - 2093[0m
+[0mGET /css/layout-1fd63fd756.css [33m404[0m 17.613 ms - 164[0m
+[0mGET /css/footer-823fcd6190.css [33m404[0m 10.580 ms - 164[0m
+[0mGET /css/header-e61b99b042.css [33m404[0m 26.840 ms - 164[0m
+[0mGET /css/user_signin-0ea267580e.css [33m404[0m 22.130 ms - 169[0m
+[0mGET /css/layout-1fd63fd756.css [33m404[0m 18.898 ms - 164[0m
+[0mGET /css/header-e61b99b042.css [33m404[0m 19.544 ms - 164[0m
+[0mGET /css/footer-823fcd6190.css [33m404[0m 19.820 ms - 164[0m
+[0mGET /css/user_signin-0ea267580e.css [33m404[0m 30.149 ms - 169[0m
+[0mGET /favicon.ico [33m404[0m 2.749 ms - 150[0m
+[0mGET / [36m304[0m 21.053 ms - -[0m
+[0mGET /css/layout-1fd63fd756.css [33m404[0m 20.033 ms - 164[0m
+[0mGET /css/user_signin-0ea267580e.css [33m404[0m 13.624 ms - 169[0m
+[0mGET /css/header-e61b99b042.css [33m404[0m 40.822 ms - 164[0m
+[0mGET /css/footer-823fcd6190.css [33m404[0m 41.561 ms - 164[0m
+[0mGET /css/layout-1fd63fd756.css [33m404[0m 17.495 ms - 164[0m
+[0mGET /css/header-e61b99b042.css [33m404[0m 16.691 ms - 164[0m
+[0mGET /css/footer-823fcd6190.css [33m404[0m 8.978 ms - 164[0m
+[0mGET /css/user_signin-0ea267580e.css [33m404[0m 8.646 ms - 169[0m
+[0mGET / [36m304[0m 26.813 ms - -[0m
+[0mGET /css/layout-1fd63fd756.css [33m404[0m 22.318 ms - 164[0m
+[0mGET /css/footer-823fcd6190.css [33m404[0m 17.651 ms - 164[0m
+[0mGET /css/header-e61b99b042.css [33m404[0m 36.250 ms - 164[0m
+[0mGET /css/user_signin-0ea267580e.css [33m404[0m 37.325 ms - 169[0m
+[0mGET /css/layout-1fd63fd756.css [33m404[0m 19.435 ms - 164[0m
+[0mGET /css/header-e61b99b042.css [33m404[0m 21.703 ms - 164[0m
+[0mGET /css/footer-823fcd6190.css [33m404[0m 22.220 ms - 164[0m
+[0mGET /css/user_signin-0ea267580e.css [33m404[0m 29.131 ms - 169[0m
+[0mGET /favicon.ico [33m404[0m 5.371 ms - 150[0m
+[0mGET / [36m304[0m 32.836 ms - -[0m
+[0mGET /css/layout-1fd63fd756.css [33m404[0m 15.005 ms - 164[0m
+[0mGET /css/user_signin-0ea267580e.css [33m404[0m 15.975 ms - 169[0m
+[0mGET /css/header-e61b99b042.css [33m404[0m 31.935 ms - 164[0m
+[0mGET /css/footer-823fcd6190.css [33m404[0m 34.002 ms - 164[0m
+[0mGET /css/header-e61b99b042.css [33m404[0m 16.585 ms - 164[0m
+[0mGET /css/layout-1fd63fd756.css [33m404[0m 15.402 ms - 164[0m
+[0mGET /css/footer-823fcd6190.css [33m404[0m 22.708 ms - 164[0m
+[0mGET /css/user_signin-0ea267580e.css [33m404[0m 42.934 ms - 169[0m
+[0mGET / [36m304[0m 20.516 ms - -[0m
+[0mGET /css/layout-1fd63fd756.css [33m404[0m 27.061 ms - 164[0m
+[0mGET /css/footer-823fcd6190.css [33m404[0m 16.394 ms - 164[0m
+[0mGET /css/header-e61b99b042.css [33m404[0m 46.945 ms - 164[0m
+[0mGET /css/user_signin-0ea267580e.css [33m404[0m 39.658 ms - 169[0m
+[0mGET /css/header-e61b99b042.css [33m404[0m 13.951 ms - 164[0m
+[0mGET /css/user_signin-0ea267580e.css [33m404[0m 10.201 ms - 169[0m
+[0mGET /css/layout-1fd63fd756.css [33m404[0m 11.839 ms - 164[0m
+[0mGET /css/footer-823fcd6190.css [33m404[0m 15.185 ms - 164[0m
+[0mGET / [36m304[0m 37.214 ms - -[0m
+[0mGET /css/layout-1fd63fd756.css [33m404[0m 26.795 ms - 164[0m
+[0mGET /css/footer-823fcd6190.css [33m404[0m 20.672 ms - 164[0m
+[0mGET /css/header-e61b99b042.css [33m404[0m 55.147 ms - 164[0m
+[0mGET /css/user_signin-0ea267580e.css [33m404[0m 47.986 ms - 169[0m
+[0mGET /css/layout-1fd63fd756.css [33m404[0m 7.962 ms - 164[0m
+[0mGET / [36m304[0m 30.371 ms - -[0m
+[0mGET /css/layout-1fd63fd756.css [33m404[0m 16.532 ms - 164[0m
+[0mGET /css/header-e61b99b042.css [33m404[0m 17.953 ms - 164[0m
+[0mGET /css/footer-823fcd6190.css [33m404[0m 19.563 ms - 164[0m
+[0mGET /css/user_signin-0ea267580e.css [33m404[0m 35.358 ms - 169[0m
+[0mGET /css/layout-1fd63fd756.css [33m404[0m 8.961 ms - 164[0m
+[0mGET /css/header-e61b99b042.css [33m404[0m 11.052 ms - 164[0m
+[0mGET /css/footer-823fcd6190.css [33m404[0m 13.932 ms - 164[0m
+::1 - - [12/Nov/2022:12:45:30 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:12:45:36 +0000] "POST /create-session HTTP/1.1" 302 64 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:12:45:36 +0000] "GET /dashboard HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:14:30:43 +0000] "GET /dashboard HTTP/1.1" 302 46 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:14:30:43 +0000] "GET / HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:14:30:48 +0000] "POST /create-session HTTP/1.1" 302 64 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:14:30:48 +0000] "GET /dashboard HTTP/1.1" 200 9726 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:17:15:55 +0000] "GET /dashboard HTTP/1.1" 302 46 "http://localhost:8080/dashboard" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:17:15:55 +0000] "GET / HTTP/1.1" 200 2093 "http://localhost:8080/dashboard" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:17:15:59 +0000] "POST /create-session HTTP/1.1" 302 64 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:17:15:59 +0000] "GET /dashboard HTTP/1.1" 200 9812 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:17:16:07 +0000] "GET /interview/destroy/636f4c756305f2373a8cb75a HTTP/1.1" 302 106 "http://localhost:8080/dashboard" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:17:16:07 +0000] "GET /dashboard HTTP/1.1" 200 7582 "http://localhost:8080/dashboard" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:17:17:50 +0000] "GET /dashboard HTTP/1.1" 200 7586 "http://localhost:8080/dashboard" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:17:17:58 +0000] "POST /interview/enroll-in-interview/636e1f8c99a2104c83d779c8 HTTP/1.1" 302 106 "http://localhost:8080/dashboard" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:17:17:59 +0000] "GET /dashboard HTTP/1.1" 200 8935 "http://localhost:8080/dashboard" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:17:18:01 +0000] "GET /interview/destroy/636e1f8c99a2104c83d779c8 HTTP/1.1" 302 106 "http://localhost:8080/dashboard" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:17:18:01 +0000] "GET /dashboard HTTP/1.1" 200 5352 "http://localhost:8080/dashboard" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:17:18:14 +0000] "GET /interview/add-interview HTTP/1.1" 200 3020 "http://localhost:8080/dashboard" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:17:18:19 +0000] "POST /interview/create HTTP/1.1" 302 134 "http://localhost:8080/interview/add-interview" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:17:18:19 +0000] "GET /interview/add-interview HTTP/1.1" 304 - "http://localhost:8080/interview/add-interview" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:17:18:24 +0000] "POST /interview/create HTTP/1.1" 302 134 "http://localhost:8080/interview/add-interview" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:17:18:24 +0000] "GET /interview/add-interview HTTP/1.1" 304 - "http://localhost:8080/interview/add-interview" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:17:18:25 +0000] "GET /dashboard HTTP/1.1" 200 9821 "http://localhost:8080/interview/add-interview" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:17:18:30 +0000] "POST /interview/enroll-in-interview/636fd55b107292bcdc8a2bea HTTP/1.1" 302 106 "http://localhost:8080/dashboard" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:17:18:30 +0000] "GET /dashboard HTTP/1.1" 200 11170 "http://localhost:8080/dashboard" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:17:18:37 +0000] "POST /interview/enroll-in-interview/636fd560107292bcdc8a2bee HTTP/1.1" 302 106 "http://localhost:8080/dashboard" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:17:18:37 +0000] "GET /dashboard HTTP/1.1" 200 12520 "http://localhost:8080/dashboard" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:17:21:22 +0000] "GET /dashboard HTTP/1.1" 200 12520 "http://localhost:8080/dashboard" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:17:21:28 +0000] "GET /student/add-student HTTP/1.1" 200 4301 "http://localhost:8080/dashboard" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:17:21:43 +0000] "POST /student/create HTTP/1.1" 302 126 "http://localhost:8080/student/add-student" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:17:21:43 +0000] "GET /student/add-student HTTP/1.1" 304 - "http://localhost:8080/student/add-student" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:17:21:44 +0000] "GET /dashboard HTTP/1.1" 200 15124 "http://localhost:8080/student/add-student" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:17:21:56 +0000] "POST /interview/enroll-in-interview/636fd55b107292bcdc8a2bea HTTP/1.1" 302 106 "http://localhost:8080/dashboard" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:17:21:56 +0000] "GET /dashboard HTTP/1.1" 200 16499 "http://localhost:8080/dashboard" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:17:22:23 +0000] "GET /student/add-student HTTP/1.1" 304 - "http://localhost:8080/dashboard" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:17:22:47 +0000] "POST /student/create HTTP/1.1" 302 126 "http://localhost:8080/student/add-student" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:17:22:47 +0000] "GET /student/add-student HTTP/1.1" 304 - "http://localhost:8080/student/add-student" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:17:22:49 +0000] "GET /dashboard HTTP/1.1" 200 19101 "http://localhost:8080/student/add-student" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:17:22:54 +0000] "POST /interview/enroll-in-interview/636fd560107292bcdc8a2bee HTTP/1.1" 302 106 "http://localhost:8080/dashboard" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:17:22:54 +0000] "GET /dashboard HTTP/1.1" 200 20472 "http://localhost:8080/dashboard" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:17:23:00 +0000] "GET /interview/destroy/636fd560107292bcdc8a2bee HTTP/1.1" 302 106 "http://localhost:8080/dashboard" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:17:23:00 +0000] "GET /dashboard HTTP/1.1" 200 15699 "http://localhost:8080/dashboard" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:17:23:02 +0000] "GET /student/destroy/636fd667acafc85b0ea4af9b HTTP/1.1" 302 106 "http://localhost:8080/dashboard" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:17:23:02 +0000] "GET /dashboard HTTP/1.1" 200 13097 "http://localhost:8080/dashboard" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:17:23:16 +0000] "GET /student/destroy/636fd627acafc85b0ea4af75 HTTP/1.1" 302 106 "http://localhost:8080/dashboard" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:17:23:16 +0000] "GET /dashboard HTTP/1.1" 200 9118 "http://localhost:8080/dashboard" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:17:26:14 +0000] "GET /dashboard HTTP/1.1" 200 9118 "http://localhost:8080/dashboard" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:17:26:19 +0000] "GET /sign-out HTTP/1.1" 302 46 "http://localhost:8080/dashboard" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+::1 - - [12/Nov/2022:17:26:19 +0000] "GET / HTTP/1.1" 304 - "http://localhost:8080/dashboard" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
